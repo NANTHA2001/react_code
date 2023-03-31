@@ -1,0 +1,27 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+   
+    /* border: 1px solid hsl(0, 29%, 97%); */
+    
+    background: url('back2.jpg') center center;
+    background-size: cover;
+
+  }
+
+table{
+    border-collapse: collapse;
+    border: 5px solid black;
+    height: 500px;
+    width: 500px;
+  }
+  tr,td,th{
+    border-collapse: collapse;
+    border: 2px solid black;
+    text-align: center;
+    
+  }
+  
+
+  

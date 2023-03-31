@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(145, 233, 233);
+    /* border: 1px solid hsl(0, 29%, 97%); */
+    margin-left:25%; 
+    background: url('back.jpg') center center;
+    background-size: cover;
+
+  }
+
+
+.container {
+    width: 500px;
+    margin-top:25%;
+    margin-left: 25%;
+    margin-bottom:10%;
+    margin-right:25%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #ccc;
+    /* background-color: #f2f2f2; */
+    background: transparent;
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  label {
+    font-size: 24px;
+  }
+  
+  input[type="text"]{
+    font-size: 24px;
+    padding: 10px;
+    margin-right:15%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #ecf4f4;
+  }
+  .password-container{
+    width: 400px;
+    position: relative;
+  } 
+  .password-container input[type="password"],
+  .password-container input[type="text"]{
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #ecf3f3;
+  }
+  .fa-eye{
+    position: absolute;
+    top: 28%;
+    right: 4%;
+    cursor: pointer;
+    color: lightgray;
+  }
+  /* .fa-eye{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    color: lightgray;
+  }
+   */
+  input[type="button"] {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #f3f8f8;
+    background-color: #2b4a0a;
+    color: white;
+    cursor: progress;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #6ed36f;
+  }
+
+  .eye-icon {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    background-image: "fa fa-eye-slash";
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: progress;
+    
+    
+    
+
+  }
+  
