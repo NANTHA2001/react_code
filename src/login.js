@@ -4,6 +4,7 @@ import './style.css'
 
 
 const Login  =() =>{
+ 
 
   var [username,setUsername]=useState('');
   var [password,setPassword]=useState('');
@@ -24,6 +25,13 @@ const Login  =() =>{
       alert("password is wrong");
      }
   }
+
+  
+    const [passwordVisible, setPasswordVisible] = useState(false);
+  
+    const togglePasswordVisibility = () => {
+      setPasswordVisible(!passwordVisible);
+    };
   
   
   return (
@@ -38,8 +46,11 @@ const Login  =() =>{
         <input type="text" placeholder="Username..." id="username" required value={username} onChange={(e) => { setUsername(e.target.value); } } />
 
         <div class="password-container">
-          <input type="password" placeholder="Password..." id="password" value={password} onChange={(e) => { setPassword(e.target.value); }}/>
-          <span> <i class="fa-solid fa-eye" id="eye"></i></span>
+          <input type={passwordVisible ? "text" : "password"} placeholder="Password..." id="password" value={password} onChange={(e) => { setPassword(e.target.value); }}/>
+          <i
+        className={`fa ${passwordVisible ? "fa-eye-slash" : "fa-eye"}`}
+        onClick={togglePasswordVisibility}
+      ></i>
         </div>
 
         <input type="button"  value="submit" id="button" onClick={handelSubmit}/>
@@ -48,7 +59,10 @@ const Login  =() =>{
 
       </form>
     </div>
-
-  );
+   
+  ); 
+  
 }
 export default Login;
+
+
