@@ -14,7 +14,7 @@ import {Button, Modal} from "react-bootstrap";
 
 
 
-const Blog=({employee,setEmployee,onDelete,onSubmit,value})=>
+const Blog=({employee,setEmployee,onDelete,onSubmit,onChange})=>
 {
 const[id,setId]=useState('');
 const[name,setName]=useState('');
@@ -99,7 +99,7 @@ function handleSubmit(event) {
                         <td>{setEmploye.name}</td>
                         <td>{setEmploye.age}</td>
                         <td>{setEmploye.gender}</td>
-                        <td><button onClick={() => value(index) }>choose column to modify</button></td>
+                        <td><button onClick={() => onChange(index) }>choose column to modify</button></td>
                         <td><button onClick={() => onDelete(index) }>Delete</button></td>
                         
                             </tr>
