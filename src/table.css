@@ -2,21 +2,104 @@
 body{
   font-family: Arial, sans-serif;
   background: url('back.jpg');
+  height: 200px;
 }
-
+/* .table1{
+  border-collapse: collapse;
+  /* border: 5px solid rgb(247, 243, 243); */
+  /* height: 10px; */
+  
+  /* color: white; */
+ 
 table{
+  font-family: Arial, sans-serif;
     border-collapse: collapse;
     border: 5px solid rgb(247, 243, 243);
-    height: 600px;
-    width: 800px;
-    
+    height: 800px;
+    width: 1200px;
+    font-size: 24px;
     color: white;
   }
+  
+
   tr,td,th{
     border-collapse: collapse;
     border: 2px solid rgb(244, 239, 239);
     text-align: center;
     
+  }
+
+  input[type="button"]{
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-top: 20px;
+   
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #f3f8f8;
+    background-color: #2b4a0a;
+    color: white;
+    cursor: progress;
+  }
+
+  input[type="button1"]{
+    font-size: 24px;
+    padding: 10px 10px;
+    margin-top: 20px;
+   
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #f3f8f8;
+    background-color: #2b4a0a;
+    color: white;
+    cursor: progress;
+  }
+  input[type="button2"]{
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #f3f8f8;
+    background-color:  #2b4a0a;
+    color: white;
+    cursor: progress;
+  }
+
+  input[type="button1"]{
+    font-size: 24px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #f3f8f8;
+    background-color:  #2b4a0a;
+    color: white;
+    cursor: progress;
+  }
+  button {
+   
+    background-color: #8a9592; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it a block element */
+    font-size: 20px; /* Set font size */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: progress; /* Add cursor on hover */
+    box-shadow: 0 0 10px #f3f8f8;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #5ecf7e;
+  }
+  
+  button:hover {
+    background-color: #7ad1ea; /* Dark green background on hover */
   }
   
 

@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    width: 1000px;
-    height: 1000px;
-    margin-left: 20%; 
+    /* width: 1000px;
+    height: 2000px; */
+    /* margin-right: 50%;  */
  
     background-color: rgb(145, 233, 233);
     /* border: 1px solid hsl(0, 29%, 97%); */
@@ -14,11 +14,11 @@ body {
 
 
 .container {
-    width: 500px;
+  max-width: max-content;
     height: 400px;
-     margin-top:25%;
-    margin-left: 20%; 
-     margin-bottom:10%;
+      margin-top:15%;
+    /* margin-left: 20%; 
+     margin-bottom:10%;  */
    
     padding: 20px;
     border: 1px solid #ccc;
@@ -57,28 +57,38 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 20px #ecf4f4;
   }
-  .password-container{
-    width: 400px;
+
+  .password-container {
     position: relative;
-  } 
+   
+    display: inline-block;
+  }
+  
+  .password-container i {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
   .password-container input[type="password"],
   .password-container input[type="text"]{
     font-size: 24px;
     padding: 10px;
-    margin-left: 9%;
+    margin-left: 2%;
     position: relative;
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 20px #ecf3f3;
   }
-  .fa-eye{
+  /* .fa-eye{
     position: absolute;
     top: 28%;
     right: 4%;
     cursor: pointer;
     color: lightgray;
-  }
+  } */
   /* .fa-eye{
     position: absolute;
     top: 8px;
@@ -89,23 +99,52 @@ body {
     color: lightgray;
   }
    */
-  input[type="button"] {
+  input[type="button"]{
     font-size: 24px;
     padding: 10px 20px;
     margin-top: 20px;
     border: none;
     border-radius: 20px;
-    box-shadow: 0 0 20px #f3f8f8;
+    box-shadow: 0 0 10px #f3f8f8;
     background-color: #2b4a0a;
     color: white;
     cursor: progress;
   }
+
+  input[type="button1"],button2{
+    font-size: 20px;
+    padding: 10px 10px;
+    margin-top: 20px;
+  
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #f3f8f8;
+    background-color: #76539f;
+    color: white;
+    cursor: progress;
+  }
+  button {
+    background-color: #8a9592; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 12px 24px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it a block element */
+    font-size: 16px; /* Set font size */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Add cursor on hover */
+    box-shadow: 0 0 10px #f3f8f8;
+  }
   
   input[type="button"]:hover {
-    background-color: #6ed36f;
+    background-color: #5ecf7e;
   }
-
-  .eye-icon {
+  
+  button:hover {
+    background-color: #7ad1ea; /* Dark green background on hover */
+  }
+  /* .eye-icon {
     position: absolute;
     top: 8px;
     right: 10px;
@@ -120,4 +159,4 @@ body {
     
 
   }
-  
+   */

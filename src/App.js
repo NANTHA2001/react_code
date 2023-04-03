@@ -49,9 +49,9 @@ function App(){
       item.id === n? { ...item,id, name, age,gender } : item
     );
  
-    const updatedEmployee =[...newData1];
-    setEmployee(updatedEmployee);
-    localStorage.setItem('employee', JSON.stringify(updatedEmployee));
+    // const updatedEmployee =[...newData1];
+    setEmployee(newData1);
+    // localStorage.setItem('employee', JSON.stringify(updatedEmployee));
 
   
   }

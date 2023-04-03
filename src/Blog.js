@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -9,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react'
 import './App.js'
 import './table.css';
-import { Button, Modal } from "react-bootstrap";
+import {Button, Modal} from "react-bootstrap";
 
 
 
@@ -56,7 +57,7 @@ const handleCancel = () => {
     const Addcolumn=(e)=>{
         e.preventDefault();
         // onaddemployee({id,name,age,gender});
-        const newEmployee={id:id, name:name, age:age, gender:gender}
+        const newEmployee={id: employee.length + 1, name:name, age:age, gender:gender}
         setEmployee([...employee,newEmployee]);
         setName('');
         setAge('');
@@ -102,9 +103,18 @@ function handleSubmit(event) {
                         <td><button onClick={() => onDelete(index) }>Delete</button></td>
                         
                             </tr>
-                ))}  
+                ))}
+                
             </tbody>
-        </table>
+            </table>
+             <center>
+            <div id="modify">
+           <input type="button2" onClick={() => setShowModal1(true)} value="Modify rows"/>
+           
+              <input type="button1" onClick={() => setShowModal(true)} value="   Add New Employee"/>
+              </div></center>
+
+        
         <Modal show={showModal1} onHide={handleCancel}>
         <Modal.Header closeButton>
           <Modal.Title>modify</Modal.Title>
@@ -139,7 +149,7 @@ function handleSubmit(event) {
           </Button>
         </Modal.Footer>
       </Modal>
-      <center><Button onClick={() => setShowModal1(true)}>Modify</Button><br></br></center>
+      
      
         
     
@@ -153,7 +163,7 @@ function handleSubmit(event) {
         <form>
 
             
-                 <input type="number" value={id}  placeholder="Enter your id.." onChange={(e) => { setId(e.target.value); }} />
+                 {/* <input type="number" value={id}  placeholder="Enter your id.." onChange={(e) => { setId(e.target.value); }} /> */}
                 
            
                  <input type="text" value={name}  placeholder="Enter your Name.." onChange={(e) => { setName(e.target.value); }} />
@@ -175,7 +185,7 @@ function handleSubmit(event) {
           </Button>
         </Modal.Footer>
       </Modal>
-     <center><Button onClick={() => setShowModal(true)}>Add New Employee</Button></center> 
+  
         </div> 
         
     );

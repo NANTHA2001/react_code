@@ -49,11 +49,11 @@ const Login  =() =>{
           <input type={passwordVisible ? "text" : "password"} placeholder="Password..." id="password" value={password} onChange={(e) => { setPassword(e.target.value); }}/>
           <i
         className={`fa ${passwordVisible ? "fa-eye-slash" : "fa-eye"}`}
-        onClick={togglePasswordVisibility}
-      ></i>
+        onClick={togglePasswordVisibility}  >  </i>
+         
         </div>
 
-        <input type="button"  value="submit" id="button" onClick={handelSubmit}/>
+        <input type="button"  value="submit"  onClick={handelSubmit}/>
 
 
 
